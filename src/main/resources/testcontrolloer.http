@@ -1,0 +1,70 @@
+DELETE http://localhost:8080/todo
+Content-Type: application/json
+
+  {
+      "id": "4028808483fe69000183fe69182c0000"
+    }
+###
+PUT http://localhost:8080/todo
+Content-Type: application/json
+
+  {
+      "id": "4028808483fdddf30183fddf0c240000",
+      "title": "새 포스트 - 수정 테스트",
+      "done": true
+    }
+###
+
+GET http://localhost:8080/todo
+Accept: application/json
+
+###
+POST http://localhost:8080/todo
+Content-Type: application/json
+
+{
+  "title" : "새 포스트"
+}
+
+
+###
+GET http://localhost:8080/todo/test
+Accept: application/json
+
+###
+GET http://localhost:8080/test/testResponseEntity
+Content-Type: application/json
+
+{
+  "id" : 123,
+  "message" : "hello ?"
+}
+
+###
+GET http://localhost:8080/test/testRequestBody
+Content-Type: application/json
+
+{
+  "id" : 123,
+  "message" : "hello ?"
+}
+
+###
+
+
+###
+GET http://localhost:8080/test/testRequestParam?id=123
+Accept: application/json
+
+###
+GET http://localhost:8080/test/testGetMapping
+Accept: application/json
+
+###
+
+###
+GET http://localhost:8080/test/123
+Accept: application/json
+
+
+
