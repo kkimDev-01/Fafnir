@@ -1,3 +1,52 @@
+GET http://localhost:8080/todo
+Authorization: application/json
+
+{
+  "username" : "hello@world.com",
+  "password" : "12345"
+}
+
+###
+
+POST http://localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+  "username" : "hello2222@world.com",
+  "password" : "12345"
+}
+
+
+###
+
+POST http://localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+  "username" : "hello1111@world.com",
+  "password" : "12345"
+}
+
+###
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+  "username" : "hello2222@world.com",
+  "password" : "12345"
+}
+
+###
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+  "username" : "hello1111@world.com",
+  "password" : "12345"
+}
+
+
+###
 DELETE http://localhost:8080/todo
 Content-Type: application/json
 
@@ -23,7 +72,7 @@ POST http://localhost:8080/todo
 Content-Type: application/json
 
 {
-  "title" : "새 포스트"
+  "title" : "hello1"
 }
 
 
